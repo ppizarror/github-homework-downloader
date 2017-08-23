@@ -102,4 +102,4 @@ users.txt
 *.html
 
 # Pycharm files
-# .idea/
+.idea/
