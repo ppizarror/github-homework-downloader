@@ -1,0 +1,80 @@
+# coding=utf-8
+"""
+CONSTANTS
+Constants used by homework-downloader
+
+Author: Pablo Pizarro R. @ppizarror.com
+Date: August 2017
+Licence:
+    The MIT License (MIT)
+    Copyright 2017 Pablo Pizarro R.
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the Software
+    is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+    WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+"""
+
+CONFIG_FILE = 'config.json'
+FOOTER = """
+</div>
+</body>
+</html>"""
+HEADER = """<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+\t<meta charset="UTF-8">
+\t<title>{0}</title>
+\n
+\t<link rel="apple-touch-icon" sizes="180x180" href="res/apple-touch-icon.png">
+\t<link rel="icon" type="image/png" sizes="32x32" href="res/favicon-32x32.png">
+\t<link rel="icon" type="image/png" sizes="16x16" href="res/favicon-16x16.png">
+\t<link rel="manifest" href="res/manifest.json">
+\t<link rel="mask-icon" href="res/safari-pinned-tab.svg" color="#000000">
+\t<link rel="shortcut icon" href="res/favicon.ico">
+\t<meta name="msapplication-config" content="res/browserconfig.xml">
+\t<meta name="theme-color" content="#ffffff">
+\n
+\t<script type="text/javascript" src="res/jquery-3.2.1.min.js"></script>
+\t<script type="text/javascript" src="res/pace.min.js"></script>
+\t<script type="text/javascript" src="res/js.cookie-2.1.4.min.js"></script>
+\t<script type="text/javascript" src="res/onload.js"></script>
+\n
+\t<link rel="stylesheet" type="text/css" href="res/style.css" media="screen">
+\t<link rel="stylesheet" type="text/css" href="res/pace.css" media="screen">
+</head>
+<body>
+<div id="title_page">
+\t<a href="{1}">{0}</a>
+</div>
+<div id="main_list">
+"""
+TEST = True
+USER_ENTRY = """
+\t<div id="{0}" class="new_user">
+\t\t<div class="user_inner">
+\t\t\t<div class="id_num">{1}</div>
+\t\t\t<div class="entry_name"><a href="{4}">{2}</a></div>
+\t\t\t<a href="{3}" title="Descargar"><div class="entry_url"><img src="res/download.png" class="button-img" /></div></a>
+\t\t\t<div class="status" id="{0}_status">
+\t\t\t\t<img src="res/error.png" class="button-img hand-pointed" title="Estado descarga"/>
+\t\t\t</div>
+\t\t</div>
+\t</div>
+"""
+VERSION = '0.2'
+
+# Download link format
+DOWNLOAD_LINK = '{0}{1}-{2}/archive/master.zip'
