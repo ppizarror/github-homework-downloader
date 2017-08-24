@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
         cookie_status = Cookies.get(this.id);
 
         // If downloaded then display check button
-        if (cookie_status != Cookies.undefined && this.id!= '') {
+        if (cookie_status != Cookies.undefined && this.id != '') {
             try {
                 var json = JSON.parse(cookie_status);
                 $(String.format('#{0} .user_inner .status img', this.id)).attr('src', 'res/check.png');
@@ -45,9 +45,6 @@ jQuery(document).ready(function($) {
                 });
                 bar.animate(1);
 
-                function noTimeout() {
-                    clearTimeout(timeout);
-                }
                 timeout = setTimeout(
                     function() {
                         Cookies.set(clicked_id, {
@@ -62,7 +59,6 @@ jQuery(document).ready(function($) {
                         $(String.format('#{0} .user_inner .status img', clicked_id)).attr('style', 'display: block');
                         $(String.format('#{0} .user_inner .status #status_date', clicked_id)).html(new Date().toLocaleString());
                     }, timewait_check);
-
             });
         }
     });

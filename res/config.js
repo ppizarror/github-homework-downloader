@@ -1,1 +1,1 @@
-var timewait_check = 5000; // Tiempo en milisigegundos para aprobar descarga
+var timewait_check = 3000; // Tiempo en milisigegundos para aprobar descarga
