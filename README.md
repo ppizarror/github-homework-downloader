@@ -14,7 +14,11 @@ Example:
 
 ## Usage
 
-Make a file where contains all user lists, like *users.txt*, make sure you use the following structure <i>id</i><b>\t</b><i>Name</i><i></i><b>\t</b><i>User invited to organization</i><b>\t</b><i>User accepted invitation</i>:
+Make a file where contains all user lists, like *users.txt*, make sure you use the following structure:
+
+<pre>
+<i>id</i><b>\t</b><i>Name</i><i></i><b>\t</b><i>User invited to organization</i><b>\t</b><i>User accepted invitation</i>
+</pre>
 
 Example:
 ```bash
