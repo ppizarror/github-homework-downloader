@@ -46,6 +46,7 @@ HEADER = """<!DOCTYPE html>
 \t<link rel="shortcut icon" href="res/favicon.ico">
 \t<meta name="msapplication-config" content="res/browserconfig.xml">
 \t<meta name="theme-color" content="#ffffff">
+\t<meta name="description" content="Created by github-homework-downloader v{2}">
 \n
 \t<script type="text/javascript" src="res/jquery-3.2.1.min.js"></script>
 \t<script type="text/javascript" src="res/pace.min.js"></script>
@@ -71,7 +72,7 @@ HEADER = """<!DOCTYPE html>
 </div>
 <div id="main_list">
 """
-TEST = True
+TEST = False
 USER_ENTRY = """
 \t<div id="{0}" class="new_user">
 \t\t<div class="user_inner">
@@ -115,7 +116,7 @@ USER_ENTRY_NON_INVITED = """
 \t\t</div>
 \t</div>
 """
-VERSION = '0.3'
+VERSION = '0.4'
 
 # Download link format
 DOWNLOAD_LINK = '{0}{1}-{2}/archive/master.zip'

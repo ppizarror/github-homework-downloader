@@ -78,7 +78,7 @@ else:
 
 # Create new website archive
 web = open(homework + '.html', 'w')
-web.write(HEADER.format(homework, cfg['ORGANIZATION'] + homework))
+web.write(HEADER.format(homework, cfg['ORGANIZATION'] + homework, VERSION))
 for i in users:
     if len(i[2]) > 1:
         if i[3] and i[4]:
