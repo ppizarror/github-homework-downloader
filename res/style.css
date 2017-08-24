@@ -67,6 +67,15 @@ body {
     color: black;
 }
 
+.entry_name b {
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 13px;
+    bottom: 0px;
+    display: inline;
+    position: relative;
+}
+
 .entry_url {
     float: left;
     margin-left: 10px;

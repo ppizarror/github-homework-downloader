@@ -77,7 +77,7 @@ USER_ENTRY = """
 \t<div id="{0}" class="new_user">
 \t\t<div class="user_inner">
 \t\t\t<div class="id_num">{1}</div>
-\t\t\t<div class="entry_name"><a href="{4}">{2}</a></div>
+\t\t\t<div class="entry_name"><a href="{4}">{2}</a> <a href="{6}"><b>({5})</b></a></div>
 \t\t\t<a href="{3}" title="Descargar" id="download" user="{0}" rel="nofollow">
 \t\t\t\t<div class="entry_url"><img src="res/download.png" class="button-img" /></div>
 \t\t\t</a>
