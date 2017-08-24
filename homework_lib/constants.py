@@ -119,3 +119,4 @@ VERSION = '0.3'
 
 # Download link format
 DOWNLOAD_LINK = '{0}{1}-{2}/archive/master.zip'
+USER_LINK = '{0}{1}-{2}'
