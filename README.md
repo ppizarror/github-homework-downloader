@@ -41,6 +41,8 @@ Finally execute script ```main.py``` and write the homework name to create a web
 - Download multiple files at once.
 - Add <a href="https://theory.stanford.edu/~aiken/moss/">moss</a> support to detect plagiarism.
 - Add more user file structures.
+- Add icon to access each user commit.
+- Add entry to create anotations, disable users from list, sort by name or user-id.
 
 ## Author
 <a href="ppizarror.com">Pablo Pizarro R.</a> | 2017
