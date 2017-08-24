@@ -37,12 +37,14 @@ Finally execute script ```main.py``` and write the homework name to create a web
 ## To do
 - Add support to several languages.
 - Set maximum limit time to accept an homework.
-- Verify homework status from Python.
+- Verify homework status with Python.
 - Download multiple files at once.
 - Add <a href="https://theory.stanford.edu/~aiken/moss/">moss</a> support to detect plagiarism.
 - Add more user file structures.
 - Add icon to access each user commit.
-- Add entry to create anotations, disable users from list, sort by name or user-id.
+- Add entry to create anotations to each user, disable users from list, sort by name or user-id.
+- Create excel file with scores of each user.
+- Visualize total commits of each user (only commits previuos homework time limit).
 
 ## Author
 <a href="ppizarror.com">Pablo Pizarro R.</a> | 2017
