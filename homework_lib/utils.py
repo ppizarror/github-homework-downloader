@@ -26,3 +26,28 @@ Licence:
     WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
     CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
+
+# Library imports
+import hashlib
+
+
+def md5_user(username):
+    """
+    Create md5 key for username id.
+
+    :param username: User name
+    :return: md5 key
+    """
+    h = hashlib.new('md5')
+    h.update(username)
+    return h.hexdigest()
+
+
+def is_yes(d):
+    """
+    If yes then true, false otherwise.
+
+    :param d: Data
+    :return:
+    """
+    return d.strip() == 'yes'

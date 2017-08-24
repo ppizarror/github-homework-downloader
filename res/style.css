@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #f6f7f8;
     width: 70%;
@@ -23,19 +27,6 @@ body {
     body {
         margin: 0 auto;
     }
-}
-
-#title_page {
-    font-size: 47px;
-    padding: 1rem 0rem;
-    display: block;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-#title_page a {
-    text-decoration: none;
-    color: black;
 }
 
 #main_list {
@@ -89,7 +80,7 @@ body {
 
 .status {
     float: right;
-    width: 10%;
+    width: 25%;
     text-align: center;
 }
 
@@ -100,6 +91,34 @@ body {
     margin: 0;
     border-radius: 10px;
     position: relative;
+}
+
+.user_not_found {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    position: relative;
+    background-color: rgb(250, 182, 182);
+    opacity: 0.5;
+}
+
+.user_not_found:hover {
+    cursor:not-allowed;
+}
+
+.error_msg {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    font-family: monospace;
+    height: 100%;
+    position: relative;
+    margin-top: 3px;
+    font-size: 15px;
+    width: 30%;
+    text-align: center;
 }
 
 .user_inner {
@@ -117,4 +136,99 @@ body {
 
 .hand-pointed {
     cursor: pointer;
+}
+
+#status_date {
+    font-size: 12px;
+    height: 100%;
+    margin: auto 0;
+    margin-top: 2px;
+    color: rgb(106, 106, 106);
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#title_page {
+    font-size: 47px;
+    padding: 1rem 0rem;
+    display: block;
+    font-weight: 500;
+    height: 100%;
+    text-decoration: none;
+    float: left;
+    width: 40%;
+}
+
+#title_page a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    float: left;
+}
+
+#toolbar {
+    float: right;
+    height: 100%;
+    vertical-align: middle;
+    min-height: 100%;
+    margin: auto 0;
+    position: relative;
+    width: 60%;
+}
+
+#toolbar_button {
+    color: rgb(120, 28, 88);
+    text-decoration: none;
+    height: 100%;
+    vertical-align: middle;
+    float: right;
+}
+
+#toolbar_button img {
+    width: 40px;
+}
+
+#progress-bar-circle {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 105%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

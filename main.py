@@ -29,7 +29,7 @@ Licence:
 
 # Library import
 from __future__ import print_function
-from homework_lib.constants import *
+from homework_lib import *
 import json
 
 # Load configs
@@ -51,6 +51,8 @@ data = open(cfg['USER_LIST'])
 lastd = 0
 for line in data:
     line = line.replace('\xef\xbb\xbf', '').split('\t')
+    if len(line) < 2:
+        continue
     if line[1] is '':
         continue
     if cfg['NUM_USER_ADD']:
@@ -58,11 +60,11 @@ for line in data:
             lastd = int(line[0])
         else:
             lastd += 1
-        users.append([str(lastd).zfill(2), line[1], line[2]])
+        users.append([str(lastd).zfill(2), line[1], line[2], is_yes(line[3]), is_yes(line[4])])
     else:
         if line[0] == '':
             line[0] = '&nbsp;'
-        users.append([line[0], line[1], line[2]])
+        users.append([line[0], line[1], line[2], is_yes(line[3]), is_yes(line[4])])
 data.close()
 
 # Request homework name
@@ -78,9 +80,17 @@ else:
 web = open(homework + '.html', 'w')
 web.write(HEADER.format(homework, cfg['ORGANIZATION'] + homework))
 for i in users:
-    u_id = 'user_id_{0}'.format(i[2])
-    u_src = DOWNLOAD_LINK.format(cfg['ORGANIZATION'], homework, i[2])
-    user_src = 'https://github.com/{0}'.format(i[2])
-    web.write(USER_ENTRY.format(u_id, i[0], i[1], u_src, user_src))
+    if len(i[2]) > 1:
+        if i[3] and i[4]:
+            u_id = 'user_id_{0}'.format(md5_user(i[2]))
+            u_src = DOWNLOAD_LINK.format(cfg['ORGANIZATION'], homework, i[2])
+            user_src = 'https://github.com/{0}'.format(i[2])
+            web.write(USER_ENTRY.format(u_id, i[0], i[1], u_src, user_src))
+        elif not i[3]:
+            web.write(USER_ENTRY_NON_INVITED.format(i[0], i[1]))
+        elif not i[4]:
+            web.write(USER_ENTRY_NON_ACCEPTED.format(i[0], i[1]))
+    else:
+        web.write(USER_ENTRY_NON_EXISTANT.format(i[0], i[1]))
 web.write(FOOTER)
 web.close()
