@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
     $('#reset_button').click(function() {
         console.log('Reset download list');
         $('#main_list > div').map(function() {
-            Cookies.remove(this.id);
+            Cookies.remove(this.id + homeworkname);
         });
         location.reload();
     });
