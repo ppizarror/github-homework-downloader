@@ -85,7 +85,7 @@ for i in users:
             u_id = 'user_id_{0}'.format(md5_user(i[2]))
             u_src = DOWNLOAD_LINK.format(cfg['ORGANIZATION'], homework, i[2])
             user_src = USER_LINK.format(cfg['ORGANIZATION'], homework, i[2])
-            user_github = 'http://github.com/'+ i[2]
+            user_github = 'http://github.com/' + i[2]
             web.write(USER_ENTRY.format(u_id, i[0], i[1], u_src, user_src, i[2], user_github))
         elif not i[3]:
             web.write(USER_ENTRY_NON_INVITED.format(i[0], i[1]))

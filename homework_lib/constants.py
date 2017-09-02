@@ -62,7 +62,7 @@ HEADER = """<!DOCTYPE html>
 <body>
 <div id="header">
 \t<div id="title_page">
-\t\t<a href="{1}">{0}</a>
+\t\t<a href="{1}" id="homework_name">{0}</a>
 \t</div>
 \t<div id="toolbar">
 \t\t<div id="toolbar_button"><a href="#" id="reset_button" class="tooltip">

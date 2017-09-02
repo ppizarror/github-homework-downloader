@@ -11,20 +11,26 @@ if (!String.format) {
 
 // Global vars
 var timeout;
+var homeworkname;
 
 // If page is loaded
 jQuery(document).ready(function($) {
 
+    // Get homework-name
+    homeworkname = $('#homework_name').html();
+
     // Check all user id's
     $('#main_list > div').map(function() {
-        cookie_status = Cookies.get(this.id);
+        cookie_status = Cookies.get(this.id + homeworkname);
 
         // If downloaded then display check button
         if (cookie_status != Cookies.undefined && this.id != '') {
             try {
                 var json = JSON.parse(cookie_status);
-                $(String.format('#{0} .user_inner .status img', this.id)).attr('src', 'res/check.png');
-                $(String.format('#{0} .user_inner .status #status_date', this.id)).html(json.date_download);
+                if (json.homework == homeworkname) {
+                    $(String.format('#{0} .user_inner .status img', this.id)).attr('src', 'res/check.png');
+                    $(String.format('#{0} .user_inner .status #status_date', this.id)).html(json.date_download);
+                }
             } catch (err) {}
         };
 
@@ -47,10 +53,11 @@ jQuery(document).ready(function($) {
 
                 timeout = setTimeout(
                     function() {
-                        Cookies.set(clicked_id, {
+                        Cookies.set(clicked_id + homeworkname, {
                             downloaded: true,
                             date_download: new Date().toLocaleString(),
-                            path: ''
+                            path: '',
+                            homework: homeworkname
                         }, {
                             expires: 14
                         });
