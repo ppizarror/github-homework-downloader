@@ -11,7 +11,7 @@ if (!String.format) {
 
 // Global vars
 var homeworkname;
-var msg_error_download = 'ERROR';
+var msg_error_download = 'ERROR 404';
 var timeoutlist = [];
 
 // If page is loaded
@@ -23,25 +23,6 @@ jQuery(document).ready(function($) {
     // Check all user id's
     $('#main_list > div').map(function() {
         cookie_status = Cookies.get(this.id + homeworkname);
-
-        // If downloaded then display check button
-        if (cookie_status != Cookies.undefined && this.id != '') {
-            try {
-                var json = JSON.parse(cookie_status);
-                if (json.homework == homeworkname) {
-                    if (json.downloaded) {
-                        $(String.format('#{0} .user_inner .status img', this.id)).attr('src', 'res/check.png');
-                    }
-                    $(String.format('#{0} .user_inner .status #status_date', this.id)).html(json.date_download);
-                    if (json.date_download == msg_error_download) {
-                        $(String.format('#{0}', this.id)).attr('class', 'error_download');
-                        $(String.format('#{0} .user_inner #download', this.id)).removeAttr('href');
-                        $(String.format('#{0} .user_inner #calendar', this.id)).removeAttr('href');
-                        $(String.format('#{0} .user_inner #usernamelink', this.id)).removeAttr('href');
-                    }
-                }
-            } catch (err) {}
-        };
 
         // Listener to all download buttons
         if (this.id != '') {
@@ -86,6 +67,26 @@ jQuery(document).ready(function($) {
                 timeoutlist.push([timeout, clicked_id]);
             });
         }
+
+        // If downloaded then display check button
+        if (cookie_status != Cookies.undefined && this.id != '') {
+            try {
+                var json = JSON.parse(cookie_status);
+                if (json.homework == homeworkname) {
+                    if (json.downloaded) {
+                        $(String.format('#{0} .user_inner .status img', this.id)).attr('src', 'res/check.png');
+                    }
+                    $(String.format('#{0} .user_inner .status #status_date', this.id)).html(json.date_download);
+                    if (json.date_download == msg_error_download) {
+                        $(String.format('#{0}', this.id)).attr('class', 'error_download');
+                        $(String.format('#{0} .user_inner #download', this.id)).unbind('click');
+                        $(String.format('#{0} .user_inner #download', this.id)).removeAttr('href');
+                        $(String.format('#{0} .user_inner #calendar', this.id)).removeAttr('href');
+                        $(String.format('#{0} .user_inner #usernamelink', this.id)).removeAttr('href');
+                    }
+                }
+            } catch (err) {}
+        };
     });
 
     // Reset button
