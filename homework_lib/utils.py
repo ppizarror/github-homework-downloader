@@ -28,6 +28,7 @@ Licence:
 
 # Library imports
 import hashlib
+import time
 
 
 def md5_user(username):
@@ -50,3 +51,12 @@ def is_yes(d):
     :return:
     """
     return d.strip() == 'yes'
+
+
+def get_current_date():
+    """
+    Return current date.
+
+    :return: String
+    """
+    return time.strftime("(%d/%m/%Y) @ %H:%M:%S")

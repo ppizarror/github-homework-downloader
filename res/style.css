@@ -37,7 +37,7 @@ body {
     padding: 0px;
     width: 85%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     min-width: 43rem;
 }
 
@@ -265,4 +265,40 @@ body {
     margin: 0;
     border-radius: 10px;
     position: relative;
+}
+
+#generatedtime {
+    display: inline-block;
+    float: left;
+    color: rgb(91, 91, 91);
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+#ppizarror {
+    display: inline-block;
+    float: right;
+    color: rgb(91, 91, 91);
+    font-size: 13px;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+#ppizarror a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#ppizarror img {
+    width: 15px;
+    height: 15px;
+    top: 3px;
+    position: relative;
+    border-radius: 3px;
+}
+
+#about {
+    padding: 5px;
+    margin-bottom: 4rem;
+    min-width: 43rem;
 }

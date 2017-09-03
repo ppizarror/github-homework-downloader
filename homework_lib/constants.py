@@ -37,6 +37,17 @@ LANGS_FILE = 'lang.json'
 # HTML Entries
 FOOTER = """
 </div>
+<div id="about">
+\t<div id="generatedtime">{0}</div>
+\t<div id="ppizarror">
+\t\t<a href="https://github.com/ppizarror/github-homework-downloader">
+\t\t\t<img src="res/favicon-32x32.png" /> github-homework-downloader
+\t\t</a> by
+\t\t<a href="http://ppizarror.com">
+\t\t\t<img src="https://avatars0.githubusercontent.com/u/12925256" /> ppizarror
+\t\t</a>
+\t</div>
+</div>
 </body>
 </html>"""
 HEADER = """<!DOCTYPE html>
