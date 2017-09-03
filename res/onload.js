@@ -79,3 +79,8 @@ jQuery(document).ready(function($) {
         location.reload();
     });
 });
+
+// Unload event cancel all timeouts
+$(window).on("unload", function(e) {
+    console.log('Canceling all timeouts.')
+});

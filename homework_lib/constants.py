@@ -27,7 +27,11 @@ Licence:
     CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
+# Files
 CONFIG_FILE = 'config.json'
+LANGS_FILE = 'lang.json'
+
+# HTML Entries
 FOOTER = """
 </div>
 </body>

@@ -1,4 +1,6 @@
 {
-  "USER_LIST": "users.txt",
-  "ORGANIZATION": ""
+  "LANG": "es-ES",
+  "NUM_USER_ADD": false,
+  "ORGANIZATION": "",
+  "USER_LIST": ""
 }

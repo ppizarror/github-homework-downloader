@@ -1,0 +1,11 @@
+{
+  "es-ES": {
+    "reset_list": "Resetear lista",
+    "see_commits": "Ver commits",
+    "download": "Descargar",
+    "download_status": "Estado descarga",
+    "user_not_exist": "Usuario no existe",
+    "user_not_accepted": "Usuario no aceptó",
+    "user_not_invited": "Usuario no invitado"
+  }
+}
