@@ -38,7 +38,7 @@ body {
     width: 85%;
     margin: 0 auto;
     margin-bottom: 2rem;
-    min-width: 40rem;
+    min-width: 43rem;
 }
 
 .id_num {
@@ -169,6 +169,7 @@ body {
     display: flex;
     width: 100%;
     height: auto;
+    min-width: 43.2rem;
 }
 
 #title_page {
