@@ -27,7 +27,7 @@ Licence:
 """
 
 # General constants
-TEST = True
+TEST = False
 VERSION = '0.4'
 
 # Files
@@ -83,7 +83,7 @@ USER_ENTRY = """
 \t<div id="{0}" class="new_user">
 \t\t<div class="user_inner">
 \t\t\t<div class="id_num">{1}</div>
-\t\t\t<div class="entry_name"><a href="{4}">{2}</a> <a href="{6}"><b>({5})</b></a></div>
+\t\t\t<div class="entry_name"><a href="{4}" id="usernamelink">{2}</a> <a href="{6}"><b>({5})</b></a></div>
 \t\t\t<a href="{7}" title="{8}" id="calendar" rel="nofollow">
 \t\t\t\t<div class="entry_calendar"><img src="res/calendar.png" class="button-img" /></div>
 \t\t\t</a>

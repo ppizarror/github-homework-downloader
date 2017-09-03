@@ -124,7 +124,7 @@ body {
 }
 
 .user_not_found:hover {
-    cursor:not-allowed;
+    cursor: not-allowed;
 }
 
 .error_msg {
@@ -212,9 +212,11 @@ body {
 }
 
 #progress-bar-circle {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     display: none;
+    margin-top: 3px;
+    margin-left: 1px;
 }
 
 .tooltip {
@@ -250,4 +252,16 @@ body {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.error_download {
+    background-color: rgb(250, 182, 182);
+    opacity: 0.5;
+    cursor: not-allowed;
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    position: relative;
 }
