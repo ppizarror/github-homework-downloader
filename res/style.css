@@ -281,7 +281,6 @@ body {
     color: rgb(91, 91, 91);
     font-size: 13px;
     font-weight: lighter;
-    margin-right: 10px;
 }
 
 #ppizarror a {
@@ -300,5 +299,5 @@ body {
 #about {
     padding: 5px;
     margin-bottom: 4rem;
-    min-width: 43rem;
+    min-width: 42.5rem;
 }

@@ -75,9 +75,11 @@ HEADER = """<!DOCTYPE html>
 \n
 \t<link rel="stylesheet" type="text/css" href="res/style.css" media="screen">
 \t<link rel="stylesheet" type="text/css" href="res/pace.css" media="screen">
+\t<link rel="stylesheet" type="text/css" href="res/scrolltop.css" media="screen">
 </head>
 
 <body>
+<a href="#" class="back-to-top" id="scrolls">Back to Top</a>
 <div id="header">
 \t<div id="title_page">
 \t\t<a href="{1}" id="homework_name">{0}</a>
