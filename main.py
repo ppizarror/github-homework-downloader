@@ -74,7 +74,7 @@ if not TEST:
     if homework is '':
         raise Exception('Homework name cant be empty')
 else:
-    homework = '01-tarea'
+    homework = '02-tarea'
 
 # Create new website archive
 web = open(homework + '.html', 'w')
@@ -86,7 +86,8 @@ for i in users:
             u_src = DOWNLOAD_LINK.format(cfg['ORGANIZATION'], homework, i[2])
             user_src = USER_LINK.format(cfg['ORGANIZATION'], homework, i[2])
             user_github = 'http://github.com/' + i[2]
-            web.write(USER_ENTRY.format(u_id, i[0], i[1], u_src, user_src, i[2], user_github))
+            user_commits = COMMITS_LINK.format(cfg['ORGANIZATION'], homework, i[2])
+            web.write(USER_ENTRY.format(u_id, i[0], i[1], u_src, user_src, i[2], user_github, user_commits))
         elif not i[3]:
             web.write(USER_ENTRY_NON_INVITED.format(i[0], i[1]))
         elif not i[4]:

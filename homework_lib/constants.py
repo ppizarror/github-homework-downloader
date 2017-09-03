@@ -78,6 +78,9 @@ USER_ENTRY = """
 \t\t<div class="user_inner">
 \t\t\t<div class="id_num">{1}</div>
 \t\t\t<div class="entry_name"><a href="{4}">{2}</a> <a href="{6}"><b>({5})</b></a></div>
+\t\t\t<a href="{7}" title="Ver commits" id="calendar" rel="nofollow">
+\t\t\t\t<div class="entry_calendar"><img src="res/calendar.png" class="button-img" /></div>
+\t\t\t</a>
 \t\t\t<a href="{3}" title="Descargar" id="download" user="{0}" rel="nofollow">
 \t\t\t\t<div class="entry_url"><img src="res/download.png" class="button-img" /></div>
 \t\t\t</a>
@@ -119,5 +122,6 @@ USER_ENTRY_NON_INVITED = """
 VERSION = '0.4'
 
 # Download link format
+COMMITS_LINK = '{0}{1}-{2}/commits/master'
 DOWNLOAD_LINK = '{0}{1}-{2}/archive/master.zip'
 USER_LINK = '{0}{1}-{2}'
