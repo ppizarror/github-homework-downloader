@@ -4,7 +4,6 @@ UTILS
 Auxiliary functions.
 
 Author: Pablo Pizarro R. @ppizarror.com
-Date: August 2017
 Licence:
     The MIT License (MIT)
     Copyright 2017 Pablo Pizarro R.

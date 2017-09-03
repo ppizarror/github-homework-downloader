@@ -4,7 +4,6 @@ CONSTANTS
 Constants used by homework-downloader
 
 Author: Pablo Pizarro R. @ppizarror.com
-Date: August 2017
 Licence:
     The MIT License (MIT)
     Copyright 2017 Pablo Pizarro R.
@@ -27,6 +26,10 @@ Licence:
     CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 
+# General constants
+TEST = True
+VERSION = '0.4'
+
 # Files
 CONFIG_FILE = 'config.json'
 LANGS_FILE = 'lang.json'
@@ -37,7 +40,7 @@ FOOTER = """
 </body>
 </html>"""
 HEADER = """<!DOCTYPE html>
-<html lang="es-ES">
+<html lang="{4}">
 <head>
 \t<meta charset="UTF-8">
 \t<title>{0}</title>
@@ -70,38 +73,37 @@ HEADER = """<!DOCTYPE html>
 \t</div>
 \t<div id="toolbar">
 \t\t<div id="toolbar_button"><a href="#" id="reset_button" class="tooltip">
-\t\t\t<img src="res/delete.png"/><span class="tooltiptext">Resetear lista</span>
+\t\t\t<img src="res/delete.png"/><span class="tooltiptext">{3}</span>
 \t\t</a></div>
 \t</div>
 </div>
 <div id="main_list">
 """
-TEST = False
 USER_ENTRY = """
 \t<div id="{0}" class="new_user">
 \t\t<div class="user_inner">
 \t\t\t<div class="id_num">{1}</div>
 \t\t\t<div class="entry_name"><a href="{4}">{2}</a> <a href="{6}"><b>({5})</b></a></div>
-\t\t\t<a href="{7}" title="Ver commits" id="calendar" rel="nofollow">
+\t\t\t<a href="{7}" title="{8}" id="calendar" rel="nofollow">
 \t\t\t\t<div class="entry_calendar"><img src="res/calendar.png" class="button-img" /></div>
 \t\t\t</a>
-\t\t\t<a href="{3}" title="Descargar" id="download" user="{0}" rel="nofollow">
+\t\t\t<a href="{3}" title="{9}" id="download" user="{0}" rel="nofollow">
 \t\t\t\t<div class="entry_url"><img src="res/download.png" class="button-img" /></div>
 \t\t\t</a>
 \t\t\t<div class="status">
 \t\t\t\t<div id="progress-bar-circle"></div>
-\t\t\t\t<img src="res/error.png" class="button-img" title="Estado descarga"/>
+\t\t\t\t<img src="res/error.png" class="button-img" title="{10}"/>
 \t\t\t\t<div id="status_date"></div>
 \t\t\t</div>
 \t\t</div>
 \t</div>
 """
-USER_ENTRY_NON_EXISTANT = """
+USER_ENTRY_NON_EXIST = """
 \t<div class="user_not_found">
 \t\t<div class="user_inner">
 \t\t\t<div class="id_num">{0}</div>
 \t\t\t<div class="entry_name">{1}</div>
-\t\t\t<div class="error_msg">Usuario no existe</div>
+\t\t\t<div class="error_msg">{2}</div>
 \t\t</div>
 \t</div>
 """
@@ -110,7 +112,7 @@ USER_ENTRY_NON_ACCEPTED = """
 \t\t<div class="user_inner">
 \t\t\t<div class="id_num">{0}</div>
 \t\t\t<div class="entry_name">{1}</div>
-\t\t\t<div class="error_msg">Usuario no aceptó</div>
+\t\t\t<div class="error_msg">{2}</div>
 \t\t</div>
 \t</div>
 """
@@ -119,11 +121,10 @@ USER_ENTRY_NON_INVITED = """
 \t\t<div class="user_inner">
 \t\t\t<div class="id_num">{0}</div>
 \t\t\t<div class="entry_name">{1}</div>
-\t\t\t<div class="error_msg">Usuario no invitado</div>
+\t\t\t<div class="error_msg">{2}</div>
 \t\t</div>
 \t</div>
 """
-VERSION = '0.4'
 
 # Download link format
 COMMITS_LINK = '{0}{1}-{2}/commits/master'

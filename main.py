@@ -4,7 +4,6 @@ MAIN FILE
 Main file that downloads several files using a user list.
 
 Author: Pablo Pizarro R. @ppizarror.com
-Date: August 2017
 Licence:
     The MIT License (MIT)
     Copyright 2017 Pablo Pizarro R.
@@ -36,13 +35,24 @@ import json
 with open(CONFIG_FILE) as json_data:
     cfg = json.load(json_data)
 
-# Check if organization is not empty
+# Load lang
+with open(LANGS_FILE) as json_data:
+    lang = json.load(json_data)
+
+try:
+    lang = lang[cfg['LANG']]
+except:
+    raise Exception('Incorrect lang config')
+
+# Check valid configuration
 if cfg['ORGANIZATION'] == '':
-    raise Exception('Organization cant be empty')
+    raise Exception(lang["config_error_organization"])
+if cfg['USER_LIST'] == '':
+    raise Exception(lang["config_error_userfile"])
 
 # Write status on console
 print('HOMEWORK DOWNLOADER v{0}'.format(VERSION))
-print('\tYOUR ORGANIZATION: {0}'.format(cfg['ORGANIZATION']))
+print(lang["ui_organizacion_text"].format(cfg['ORGANIZATION']))
 print('')
 
 # Load user list
@@ -70,15 +80,15 @@ data.close()
 # Request homework name
 if not TEST:
     # noinspection PyCompatibility
-    homework = raw_input('NEW HOMEWORK NAME: ')
+    homework = raw_input(lang["ui_request_homework"])
     if homework is '':
-        raise Exception('Homework name cant be empty')
+        raise Exception(lang["ui_homework_blank_error"])
 else:
-    homework = '02-tarea'
+    homework = '01-tarea'
 
 # Create new website archive
 web = open(homework + '.html', 'w')
-web.write(HEADER.format(homework, cfg['ORGANIZATION'] + homework, VERSION))
+web.write(HEADER.format(homework, cfg['ORGANIZATION'] + homework, VERSION, lang["reset_list"], cfg['LANG']))
 for i in users:
     if len(i[2]) > 1:
         if i[3] and i[4]:
@@ -87,12 +97,13 @@ for i in users:
             user_src = USER_LINK.format(cfg['ORGANIZATION'], homework, i[2])
             user_github = 'http://github.com/' + i[2]
             user_commits = COMMITS_LINK.format(cfg['ORGANIZATION'], homework, i[2])
-            web.write(USER_ENTRY.format(u_id, i[0], i[1], u_src, user_src, i[2], user_github, user_commits))
+            web.write(USER_ENTRY.format(u_id, i[0], i[1], u_src, user_src, i[2], user_github, user_commits,
+                                        lang["see_commits"], lang["download"], lang["download_status"]))
         elif not i[3]:
-            web.write(USER_ENTRY_NON_INVITED.format(i[0], i[1]))
+            web.write(USER_ENTRY_NON_INVITED.format(i[0], i[1], lang["user_not_invited"]))
         elif not i[4]:
-            web.write(USER_ENTRY_NON_ACCEPTED.format(i[0], i[1]))
+            web.write(USER_ENTRY_NON_ACCEPTED.format(i[0], i[1], lang["user_not_accepted"]))
     else:
-        web.write(USER_ENTRY_NON_EXISTANT.format(i[0], i[1]))
+        web.write(USER_ENTRY_NON_EXIST.format(i[0], i[1], lang["user_not_exist"]))
 web.write(FOOTER)
 web.close()

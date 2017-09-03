@@ -82,5 +82,5 @@ jQuery(document).ready(function($) {
 
 // Unload event cancel all timeouts
 $(window).on("unload", function(e) {
-    console.log('Canceling all timeouts.')
+    console.log('Canceling all timeouts')
 });
