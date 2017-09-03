@@ -28,7 +28,7 @@ Licence:
 
 # General constants
 TEST = False
-VERSION = '0.4'
+VERSION = '0.5'
 
 # Files
 CONFIG_FILE = 'config.json'
@@ -42,7 +42,7 @@ FOOTER = """
 \t<div id="ppizarror">
 \t\t<a href="https://github.com/ppizarror/github-homework-downloader">
 \t\t\t<img src="res/favicon-32x32.png" /> github-homework-downloader
-\t\t</a> by
+\t\t</a> v{1} by
 \t\t<a href="http://ppizarror.com">
 \t\t\t<img src="https://avatars0.githubusercontent.com/u/12925256" /> ppizarror
 \t\t</a>

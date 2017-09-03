@@ -105,5 +105,5 @@ for i in users:
             web.write(USER_ENTRY_NON_ACCEPTED.format(i[0], i[1], lang["user_not_accepted"]))
     else:
         web.write(USER_ENTRY_NON_EXIST.format(i[0], i[1], lang["user_not_exist"]))
-web.write(FOOTER.format(lang["generated_on"].format(get_current_date())))
+web.write(FOOTER.format(lang["generated_on"].format(get_current_date()), VERSION))
 web.close()

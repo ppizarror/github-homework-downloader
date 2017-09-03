@@ -12,7 +12,7 @@
     "ui_organizacion_text": "\tSU ORGANIZACION: {0}",
     "ui_request_homework": "NUEVO NOMBRE DE TAREA: ",
     "ui_homework_blank_error": "El nombre de tarea no puede estar en blanco",
-    "generated_on": "Generado el {0}"
+    "generated_on": "Generado el <i>{0}</i>"
   },
   "en-US": {
     "reset_list": "Reset list",
@@ -27,6 +27,6 @@
     "ui_organizacion_text": "\tYOUR ORGANIZATION: {0}",
     "ui_request_homework": "NEW HOMEWORK NAME: ",
     "ui_homework_blank_error": "Homework name cant be empty",
-    "generated_on": "Generated on {0}"
+    "generated_on": "Generated on <i>{0}</i>"
   }
 }
