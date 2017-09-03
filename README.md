@@ -35,16 +35,16 @@ Then add user file and organization link to <a href="https://github.com/ppizarro
 Finally execute script ```main.py``` and write the homework name to create a webpage containing the list of users and dowload links.
 
 ## To do
-- Add support to several languages.
+- <strike>Add support to several langs</strike> <i>(02/09/17)</i>.
 - Set maximum limit time to accept an homework.
 - Verify homework status with Python.
 - Download multiple files at once.
 - Add <a href="https://theory.stanford.edu/~aiken/moss/">moss</a> support to detect plagiarism.
 - Add more user file structures.
-- Add icon to access each user commit.
+- <strike>Add icon to access each user commit</strike> <i>(02/09/17)</i>.
 - Add entry to create anotations to each user, disable users from list, sort by name or user-id.
 - Create excel file with scores of each user.
 - Visualize total commits of each user (only commits previuos homework time limit).
 
 ## Author
-<a href="ppizarror.com">Pablo Pizarro R.</a> | 2017
+<a href="ppizarror.com">Pablo Pizarro R.</a> | 2017.
