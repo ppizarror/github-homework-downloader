@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
                         $(String.format('#{0} .user_inner .status #status_date', clicked_id)).html(new Date().toLocaleString());
                         for (var i = 0; i < timeoutlist.length; i++) {
                             if (timeoutlist[i][1] == clicked_id) {
-                                timeoutlist.splice(i, i);
+                                timeoutlist.splice(i, 1);
                                 break;
                             }
                         }
