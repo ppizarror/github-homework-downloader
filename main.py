@@ -3,7 +3,7 @@
 MAIN FILE
 Main file that downloads several files using a user list.
 
-Author: Pablo Pizarro R. @ppizarror.com
+Author: Pablo Pizarro R. @ ppizarror.com
 Licence:
     The MIT License (MIT)
     Copyright 2017 Pablo Pizarro R.

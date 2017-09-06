@@ -2,8 +2,7 @@
 """
 HOMEWORK LIBS
 
-Author: Pablo Pizarro R. @ppizarror.com
-Date: August 2017
+Author: Pablo Pizarro R. @ ppizarror.com
 Licence:
     The MIT License (MIT)
     Copyright 2017 Pablo Pizarro R.
