@@ -28,7 +28,7 @@ Licence:
 
 # General constants
 TEST = False
-VERSION = '0.6'
+VERSION = '0.7'
 
 # Files
 CONFIG_FILE = 'config.json'
