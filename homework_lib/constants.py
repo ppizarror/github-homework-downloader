@@ -28,7 +28,7 @@ Licence:
 
 # General constants
 TEST = False
-VERSION = '0.7'
+VERSION = '0.8'
 
 # Files
 CONFIG_FILE = 'config.json'
@@ -51,6 +51,7 @@ FOOTER = """
 </body>
 </html>"""
 HEADER = """<!DOCTYPE html>
+<meta charset="UTF-8">
 <!--
 GITHUB-HOMEWORK-DOWNLOADER
 
@@ -79,7 +80,6 @@ Licence:
 
 <html lang="{4}">
 <head>
-\t<meta charset="UTF-8">
 \t<title>{0}</title>
 \n
 \t<link rel="apple-touch-icon" sizes="180x180" href="res/apple-touch-icon.png">
