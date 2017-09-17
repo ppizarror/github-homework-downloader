@@ -1,5 +1,5 @@
 /*
-GITHUB-HOMEWORK-DOWMLOADER
+GITHUB-HOMEWORK-DOWNLOADER
 
 Author: Pablo Pizarro R. @ ppizarror.com
 Licence:
