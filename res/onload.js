@@ -36,6 +36,7 @@ if (!String.format) {
 }
 
 // Global vars
+var commitlink;
 var homeworkname;
 var msg_error_download = 'ERROR 404';
 var timeoutlist = [];
@@ -48,10 +49,14 @@ jQuery(document).ready(function($) {
 
     // Check all user id's
     $('#main_list > div').map(function() {
-        cookie_status = Cookies.get(this.id + homeworkname);
 
         // Listener to all download buttons
         if (this.id != '') {
+
+            // Get commit data from json
+            commitlink = $(String.format('#{0} .user_inner #calendar', this.id)).attr('href');
+
+            cookie_status = Cookies.get(this.id + homeworkname);
             $(String.format('#{0} .user_inner #download', this.id)).click(function(event) {
                 clicked_id = $(this).attr('user');
                 $(String.format('#{0} .user_inner .status img', clicked_id)).attr('style', 'display: none');
