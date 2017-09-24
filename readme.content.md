@@ -22,9 +22,7 @@ Example:
 6    Paul Stephenson    true    true
 ```
 
-Then add user file and organization link to <a href="https://github.com/ppizarror/github-homework-downloader/blob/master/config.json">config.json</a>
-
-Finally execute script ```main.py``` and write the homework name to create a webpage containing the list of users and dowload links
+Then add user file and organization link to <a href="https://github.com/ppizarror/github-homework-downloader/blob/master/config.json">config.json</a>. Finally execute script ```main.py``` and write the homework name to create a webpage containing the list of users and dowload links.
 
 ## To do
 - <strike>Add support to several langs</strike> <i>(02/09/17)</i>.
