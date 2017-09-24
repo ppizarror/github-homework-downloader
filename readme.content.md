@@ -1,13 +1,3 @@
-<h1 align="center">
-  <img alt="Github homework downloader" src="http://ppizarror.com/resources/other/github.png" width="200px" height="200px" />
-  <br /><br />
-  Github homework downloader</h1>
-<p align="center">Python app that create a html website to download several homeworks from a student github organization</p>
-<div align="center"><a href="http://ppizarror.com"><img alt="@ppizarror" src="http://ppizarror.com/badges/author.svg" /></a>
-<a href="https://opensource.org/licenses/MIT/"><img alt="MIT License" src="http://ppizarror.com/badges/licensemit.svg" /></a>
-<a href="https://www.python.org/downloads/"><img alt="Python 2.7" src="http://ppizarror.com/badges/python27.svg" /></a>
-</div><br />
-
 A simple application that request homework name on github (for example *01-homework*) and lists all users from a organization with a download link to that homework.
 
 Example:
@@ -47,6 +37,3 @@ Finally execute script ```main.py``` and write the homework name to create a web
 - Add entry to create anotations to each user, disable users from list, sort by name or user-id.
 - Create excel file with scores of each user.
 - Visualize total commits of each user (only commits previuos homework time limit).
-
-## Autor
-<a href="http://ppizarror.com" title="ppizarror">Pablo Pizarro R.</a> | 2017
