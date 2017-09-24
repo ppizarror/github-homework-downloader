@@ -30,6 +30,12 @@ Licence:
 from __future__ import print_function
 from homework_lib import *
 import json
+import sys
+
+# noinspection PyCompatibility
+reload(sys)
+# noinspection PyUnresolvedReferences
+sys.setdefaultencoding('utf8')
 
 # Load configs
 with open(CONFIG_FILE) as json_data:
@@ -39,9 +45,10 @@ with open(CONFIG_FILE) as json_data:
 with open(LANGS_FILE) as json_data:
     lang = json.load(json_data)
 
+# noinspection PyCompatibility
 try:
     lang = lang[cfg['LANG']]
-except:
+except Exception, e:
     raise Exception('Incorrect lang config')
 
 # Check valid configuration
