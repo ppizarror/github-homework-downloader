@@ -28,7 +28,7 @@ Licence:
 
 # General constants
 TEST = False
-VERSION = '0.8.2'
+VERSION = '0.8.3'
 
 # Files
 CONFIG_FILE = 'config.json'
@@ -95,13 +95,13 @@ Licence:
 \t<script type="text/javascript" src="res/jquery-3.2.1.min.js"></script>
 \t<script type="text/javascript" src="res/pace.min.js"></script>
 \t<script type="text/javascript" src="res/js.cookie-2.1.4.min.js"></script>
-\t<script type="text/javascript" src="res/progressbar.js"></script>
-\t<script type="text/javascript" src="res/config.js"></script>
-\t<script type="text/javascript" src="res/onload.js"></script>
+\t<script type="text/javascript" src="res/progressbar.min.js"></script>
+\t<script type="text/javascript" src="res/config.min.js"></script>
+\t<script type="text/javascript" src="res/onload.min.js"></script>
 \n
-\t<link rel="stylesheet" type="text/css" href="res/style.css" media="screen">
-\t<link rel="stylesheet" type="text/css" href="res/pace.css" media="screen">
-\t<link rel="stylesheet" type="text/css" href="res/scrolltop.css" media="screen">
+\t<link rel="stylesheet" type="text/css" href="res/style.min.css" media="screen">
+\t<link rel="stylesheet" type="text/css" href="res/pace.min.css" media="screen">
+\t<link rel="stylesheet" type="text/css" href="res/scrolltop.min.css" media="screen">
 </head>
 
 <body>
