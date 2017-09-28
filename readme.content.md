@@ -34,7 +34,7 @@ Then add user file and organization link to <a href="https://github.com/ppizarro
 - <strike>Add icon to access each user commit</strike> <i>(02/09/17)</i>.
 - Add entry to create anotations to each user, disable users from list, sort by name or user-id.
 - Create excel file with scores of each user.
-- Visualize total commits of each user (only commits previuos homework time limit).
+- Visualize total commits of each user (only commits before homework time limit).
 
 ## License
 This project is under MIT License [https://opensource.org/licenses/MIT]

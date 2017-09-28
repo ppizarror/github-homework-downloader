@@ -50,7 +50,7 @@ def is_yes(d):
     :param d: Data
     :return:
     """
-    return d.strip() == 'yes'
+    return d.strip().lower() == 'yes' or d.strip().lower() == 'true'
 
 
 def get_current_date():
