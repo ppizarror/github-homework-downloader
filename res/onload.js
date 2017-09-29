@@ -54,15 +54,15 @@ jQuery(document).ready(function($) {
         if (this.id != '') {
 
             // Get commit data from json
-            commitlink = $(String.format('#{0} .user_inner #calendar', this.id)).attr('href');
+            commitlink = $(String.format('#{0} .user_inner .calendar', this.id)).attr('href');
 
             cookie_status = Cookies.get(this.id + homeworkname);
-            $(String.format('#{0} .user_inner #download', this.id)).click(function(event) {
-                clicked_id = $(this).attr('user');
+            $(String.format('#{0} .user_inner .download', this.id)).click(function(event) {
+                clicked_id = $(this).attr('data-user');
                 $(String.format('#{0} .user_inner .status img', clicked_id)).attr('style', 'display: none');
-                $(String.format('#{0} .user_inner .status #status_date', clicked_id)).html('');
-                $(String.format('#{0} .user_inner .status #progress-bar-circle', clicked_id)).attr('style', 'display: block');
-                var bar = new ProgressBar.Circle(String.format('#{0} .user_inner .status #progress-bar-circle', clicked_id), {
+                $(String.format('#{0} .user_inner .status .status_date', clicked_id)).html('');
+                $(String.format('#{0} .user_inner .status .progress-bar-circle', clicked_id)).attr('style', 'display: block');
+                var bar = new ProgressBar.Circle(String.format('#{0} .user_inner .status .progress-bar-circle', clicked_id), {
                     strokeWidth: 20,
                     easing: 'easeInOut',
                     duration: timewait_check,
@@ -83,11 +83,11 @@ jQuery(document).ready(function($) {
                         }, {
                             expires: 14
                         });
-                        $(String.format('#{0} .user_inner .status #progress-bar-circle', clicked_id)).removeAttr('style');
-                        $(String.format('#{0} .user_inner .status #progress-bar-circle', clicked_id)).html('');
+                        $(String.format('#{0} .user_inner .status .progress-bar-circle', clicked_id)).removeAttr('style');
+                        $(String.format('#{0} .user_inner .status .progress-bar-circle', clicked_id)).html('');
                         $(String.format('#{0} .user_inner .status img', clicked_id)).attr('src', 'res/check.png');
                         $(String.format('#{0} .user_inner .status img', clicked_id)).removeAttr('style');
-                        $(String.format('#{0} .user_inner .status #status_date', clicked_id)).html(new Date().toLocaleString());
+                        $(String.format('#{0} .user_inner .status .status_date', clicked_id)).html(new Date().toLocaleString());
                         for (var i = 0; i < timeoutlist.length; i++) {
                             if (timeoutlist[i][1] == clicked_id) {
                                 timeoutlist.splice(i, 1);
@@ -107,13 +107,13 @@ jQuery(document).ready(function($) {
                     if (json.downloaded) {
                         $(String.format('#{0} .user_inner .status img', this.id)).attr('src', 'res/check.png');
                     }
-                    $(String.format('#{0} .user_inner .status #status_date', this.id)).html(json.date_download);
+                    $(String.format('#{0} .user_inner .status .status_date', this.id)).html(json.date_download);
                     if (json.date_download == msg_error_download) {
                         $(String.format('#{0}', this.id)).attr('class', 'error_download');
-                        $(String.format('#{0} .user_inner #download', this.id)).unbind('click');
-                        $(String.format('#{0} .user_inner #download', this.id)).removeAttr('href');
-                        $(String.format('#{0} .user_inner #calendar', this.id)).removeAttr('href');
-                        $(String.format('#{0} .user_inner #usernamelink', this.id)).removeAttr('href');
+                        $(String.format('#{0} .user_inner .download', this.id)).unbind('click');
+                        $(String.format('#{0} .user_inner .download', this.id)).removeAttr('href');
+                        $(String.format('#{0} .user_inner .calendar', this.id)).removeAttr('href');
+                        $(String.format('#{0} .user_inner .usernamelink', this.id)).removeAttr('href');
                     }
                 }
             } catch (err) {}

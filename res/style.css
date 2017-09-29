@@ -183,7 +183,7 @@ body {
     cursor: pointer;
 }
 
-#status_date {
+.status_date {
     font-size: 12px;
     height: 100%;
     margin: auto 0;
@@ -239,7 +239,7 @@ body {
     margin-top: 5px;
 }
 
-#progress-bar-circle {
+.progress-bar-circle {
     width: 17px;
     height: 17px;
     display: none;
