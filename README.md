@@ -1,21 +1,22 @@
 <h1 align="center">
-  <img alt="Github homework downloader" src="http://ppizarror.com/resources/other/github.png" width="200px" height="200px" />
+  <img alt="Github homework downloader" src="http://res.ppizarror.com/other/github.png" width="200px" height="200px" />
   <br /><br />
   Github homework downloader</h1>
 <p align="center">Python app that create a html website to download several homeworks from a student github organization</p>
-<div align="center"><a href="http://ppizarror.com"><img alt="@ppizarror" src="http://ppizarror.com/badges/author.svg" /></a>
-<a href="https://opensource.org/licenses/MIT/"><img alt="MIT License" src="http://ppizarror.com/badges/licensemit.svg" /></a>
-<a href="https://www.python.org/downloads/"><img alt="Python 2.7" src="http://ppizarror.com/badges/python27.svg" /></a>
+<div align="center"><a href="https://ppizarror.com"><img alt="@ppizarror" src="https://res.ppizarror.com/badges/author.svg" /></a>
+<a href="https://opensource.org/licenses/MIT/"><img alt="MIT License" src="https://res.ppizarror.com/badges/licensemit.svg" /></a>
+<a href="https://www.python.org/downloads/"><img alt="Python 2.7" src="https://res.ppizarror.com/badges/python27.svg" /></a>
 </div><br />
 
 A simple application that request homework name on github (for example *01-homework*) and lists all users from a organization with a download link to that homework.
 
 Example:
 <p align="center">
-  <img src="http://ppizarror.com/resources/images/github-homework-downloader/example_homework_downloader.PNG" alt="Example" width="80%" />
+  <img src="https://res.ppizarror.com/images/github-homework-downloader/example_homework_downloader.PNG" alt="Example" width="80%" />
 </p>
 
 ## Usage
+
 Make a file where contains all user lists, like *users.txt*, make sure you use the following structure:
 
 <pre>
@@ -23,6 +24,7 @@ Make a file where contains all user lists, like *users.txt*, make sure you use t
 </pre>
 
 Example:
+
 ```bash
 1    John Doe    joe_john    true    true
 2    Mark Houston B.    mark340    true    true
@@ -35,6 +37,7 @@ Example:
 Then add user file and organization link to <a href="https://github.com/ppizarror/github-homework-downloader/blob/master/config.json">config.json</a>. Finally execute script ```main.py``` and write the homework name to create a webpage containing the list of users and download links.
 
 ## To do
+
 - <strike>Add support to several langs</strike> <i>(02/09/17)</i>.
 - Set maximum limit time to accept an homework.
 - Verify homework status with Python.
@@ -47,7 +50,9 @@ Then add user file and organization link to <a href="https://github.com/ppizarro
 - Visualize total commits of each user (only commits before homework time limit).
 
 ## License
+
 This project is under MIT License [https://opensource.org/licenses/MIT]
 
+
 ## Author
-<a href="http://ppizarror.com" title="ppizarror">Pablo Pizarro R.</a> | 2017
+<a href="https://ppizarror.com" title="ppizarror">Pablo Pizarro R.</a> | 2017

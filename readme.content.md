@@ -2,10 +2,11 @@ A simple application that request homework name on github (for example *01-homew
 
 Example:
 <p align="center">
-  <img src="http://ppizarror.com/resources/images/github-homework-downloader/example_homework_downloader.PNG" alt="Example" width="80%" />
+  <img src="https://res.ppizarror.com/images/github-homework-downloader/example_homework_downloader.PNG" alt="Example" width="80%" />
 </p>
 
 ## Usage
+
 Make a file where contains all user lists, like *users.txt*, make sure you use the following structure:
 
 <pre>
@@ -13,6 +14,7 @@ Make a file where contains all user lists, like *users.txt*, make sure you use t
 </pre>
 
 Example:
+
 ```bash
 1    John Doe    joe_john    true    true
 2    Mark Houston B.    mark340    true    true
@@ -25,6 +27,7 @@ Example:
 Then add user file and organization link to <a href="https://github.com/ppizarror/github-homework-downloader/blob/master/config.json">config.json</a>. Finally execute script ```main.py``` and write the homework name to create a webpage containing the list of users and download links.
 
 ## To do
+
 - <strike>Add support to several langs</strike> <i>(02/09/17)</i>.
 - Set maximum limit time to accept an homework.
 - Verify homework status with Python.
@@ -37,4 +40,5 @@ Then add user file and organization link to <a href="https://github.com/ppizarro
 - Visualize total commits of each user (only commits before homework time limit).
 
 ## License
+
 This project is under MIT License [https://opensource.org/licenses/MIT]

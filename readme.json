@@ -2,7 +2,7 @@
     "PROJECT": {
         "NAME": "Github homework downloader",
         "ICON": {
-            "IMAGE": "http://ppizarror.com/resources/other/github.png",
+            "IMAGE": "http://res.ppizarror.com/other/github.png",
             "ALT": "Github homework downloader",
             "WIDTH": 200,
             "HEIGHT": 200
@@ -12,7 +12,7 @@
     },
     "AUTHOR": {
         "NAME": "Pablo Pizarro R.",
-        "URL": "http://ppizarror.com",
+        "URL": "https://ppizarror.com",
         "ALT": "ppizarror",
         "DATE": "2017",
         "SECTION": {
@@ -23,17 +23,17 @@
     "DESCRIPTION": "Python app that create a html website to download several homeworks from a student github organization",
     "BADGES": {
         "0": {
-            "IMAGE": "http://ppizarror.com/badges/author.svg",
-            "HREF": "http://ppizarror.com",
+            "IMAGE": "https://res.ppizarror.com/badges/author.svg",
+            "HREF": "https://ppizarror.com",
             "ALT": "@ppizarror"
         },
         "1": {
-            "IMAGE": "http://ppizarror.com/badges/licensemit.svg",
+            "IMAGE": "https://res.ppizarror.com/badges/licensemit.svg",
             "HREF": "https://opensource.org/licenses/MIT/",
             "ALT": "MIT License"
         },
         "2": {
-            "IMAGE": "http://ppizarror.com/badges/python27.svg",
+            "IMAGE": "https://res.ppizarror.com/badges/python27.svg",
             "HREF": "https://www.python.org/downloads/",
             "ALT": "Python 2.7"
         }
