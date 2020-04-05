@@ -156,7 +156,7 @@ FOOTER = """
 \t\t\t<a href="https://github.com/ppizarror/github-homework-downloader">
 \t\t\t\t<img src="res/favicon-32x32.png" alt="" /> github-homework-downloader
 \t\t\t</a> v{1} by
-\t\t\t<a href="http://ppizarror.com">
+\t\t\t<a href="https://ppizarror.com">
 \t\t\t\t<img src="https://avatars0.githubusercontent.com/u/12925256" alt="" /> ppizarror
 \t\t\t</a>
 \t\t</div>

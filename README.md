@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Github homework downloader" src="http://res.ppizarror.com/other/github.png" width="200px" height="200px" />
+  <img alt="Github homework downloader" src="https://res.ppizarror.com/other/github.png" width="200px" height="200px" />
   <br /><br />
   Github homework downloader</h1>
 <p align="center">Python app that create a html website to download several homeworks from a student github organization</p>

@@ -2,7 +2,7 @@
     "PROJECT": {
         "NAME": "Github homework downloader",
         "ICON": {
-            "IMAGE": "http://res.ppizarror.com/other/github.png",
+            "IMAGE": "https://res.ppizarror.com/other/github.png",
             "ALT": "Github homework downloader",
             "WIDTH": 200,
             "HEIGHT": 200
